@@ -1,0 +1,241 @@
+<html>
+ <head>
+    
+<link rel="STYLESHEET" type="text/css" href="reg.css" />
+ 
+</head>
+
+<body>
+<form id='register' action='register.php' method='post'
+    accept-charset='UTF-8'>
+
+<center><h4> FACULTY REGISTRATION FORM</h4></center>
+
+<fieldset >
+
+<legend>Basic Information</legend>
+
+
+
+<input type='hidden' name='submitted' id='submitted' value='1'/>
+
+
+<table>
+
+<tr>
+	
+	<td><label >First Name<span class="required">*</span></label></td>
+	<td>:</td>
+	
+	<td><input type='text' name='firstname' id='firstname' maxlength="50" /></td>
+	
+	<td><label>Middle Name:</label></td>
+	
+	<td><input type='text' name='middlename' id='middlename' maxlength="50" /></td>
+	<td><pre>		</pre></td>
+	
+	<td><label>Last Name<span class="required">*</span>:</label></td>
+	
+	<td><input type='text' name='lastname' id='lastname' maxlength="50" /></td>
+  
+</tr>
+
+
+
+<tr>
+	
+	<td><label >Faculty Id<span class="required">*</span></label></td><td>:</td>
+	
+	<td><input type='text' name='facultyid' id='facultyid' maxlength="50" /></td>
+	
+
+</tr>
+
+
+<tr>
+	
+	<td><label >Designation<span class="required">*</span></label></td><td>:</td>
+	
+	<td><input type='text' name='designation' id='designation' maxlength="50" /></td>
+	
+
+</tr>
+
+
+<tr>
+
+	<td><label>Dept.<span class="required">*</span></label></td><td>:</td>
+	
+	<td><select name=dept>
+	
+	<option name="CSE">CSE</option>
+	
+	<option name="ECE">ECE</option>
+	
+	<option name="EEE">EEE</option>
+	
+	<option name="HSc.">H&Sc.</option>
+
+	</select></td>
+
+</tr>
+
+<tr>
+	<td>Date Of Birth<span class="required">*</span></td><td>:</td>
+
+   	 <td><input type="date" name="dob"></td>
+ 
+ 
+ </tr>
+
+<tr>
+	<td><label>Aadhar No.<span class="required">*</span></label></td><td>:</td>
+	
+	<td><input type="text" name="aadharno" id='aadharno' maxlength="70"/></td>
+ 
+</tr>
+
+
+<tr>
+  
+	 <td><label>Email ID<span class="required">*</span></label></td><td>:</td>
+
+    	<td><input type="text" name="email" id='email' maxlength="70"/></td>
+
+</tr>
+
+<tr>
+  
+	<td><label>Phone No.<span class="required">*</span></label></td><td>:</td>
+    	
+	<td><input type="text" pattern="[0-9]*" name="phnum" /></td>
+
+
+	<td><label>Alternate No.:<span class="required">*</span></label></td>  	
+	<td><input type="text" pattern="[0-9]*" name="phnum1" /></td>
+
+
+</tr>
+
+<tr>
+  
+	<td><label>Gender<span class="required">*</span></label></td><td>:</td>
+    	
+	<td><input type="radio" name="gender" value="male"> Male      
+	<input type="radio" name="gender" value="female"> Female<br></td>
+
+</tr>
+
+<tr>
+
+	<td><label>User ID<span class="required">*</span></label></td><td>:</td>
+
+	<td><input type='text' name='userid' id='userid' maxlength="50" /></td>
+</tr>
+ 
+<tr>
+    
+	<td>Enter Password<span class="required">*</span></td><td>:</td>
+    
+	<td><input type="password" name="pwd" id='pwd' maxlength="50" /></td>
+  
+</tr>
+  
+<tr>
+    
+	<td>Re-Enter Password<span class="required">*</span></td><td>:</td>
+    
+	<td><input type="password" name="rpwd" id='rpwd' maxlength="50" /></td>
+  
+</tr>
+
+
+
+<tr>
+
+	<td><label>Upload Photo<span class="required">*</span></label></td><td>:</td>
+ 
+   	<td><input type="file" name="uploadphoto"/></td>
+
+</tr>
+
+</table>
+
+</fieldset >
+
+
+
+<fieldset>
+
+<legend>Educational Details</legend>
+
+<table>
+        
+<tr>
+	
+	<td><label>Higher Qualification<span class="required">*</span></label></td><td>:</td>
+    	
+	<td><input type="text" name="higherqualification"/></td>
+        
+</tr>
+        
+<tr>
+	
+	<td><label>Experience in Previous Colleges</label></td><td>:</td>
+    	
+	<td><input type="text" name="previousexperience"/></td>
+        
+</tr>
+        
+<tr>
+	
+	<td><label>Experience in Present College</label></td><td>:</td>
+    	
+	<td><input type="text" name="presentexperience"/></td>
+        
+</tr>
+        
+<tr>
+        
+	 <td><label>Total Experience:<span class="required">*</span></label></td><td>:</td>
+    	
+	<td><input type="text" name="totalexperience"/></td>
+        
+</tr>
+
+</table>
+
+</fieldset>
+
+
+<fieldset>
+
+<legend>Address for Communication</legend>
+
+<table>
+
+<tr>
+	
+	<td><label> Address1<span class="required">*</span>:</label></td>
+	
+		<td><textarea name="address1" rows="5" cols="20"></textarea></td>
+
+
+		<td><label> Address2:</label></td>
+	 
+		<td><textarea name="address2" rows="5" cols="20"></textarea></td>
+</tr>
+
+</table>
+
+
+
+</fieldset>
+<table align="center">
+	
+	<tr>
+<td><input type="submit" name="save" value="Register"/></td>
+	
+	<td><input type="reset" value="Reset"/></td></table></td>
+
+</tr></table></form>
